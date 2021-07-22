@@ -1,0 +1,49 @@
+<!DOCTYPE html>   
+<head>   
+    <title>Edit</title>  
+</head>  
+<body>  
+<form method="POST" action="/update/{{student.id}}">  
+        {% csrf_token %}  
+    <div class="container">  
+<br>  
+    <div>  
+    <label></label>  
+    <div>  
+    <h3>Update Details</h3>  
+    </div>  
+  </div>  
+    <div>  
+    <label>Student Id:</label>  
+    <div>  
+        <input type="text" name="id" id="id_id" value="{{ student.id }}">  
+    </div>  
+  </div>  
+  <div>  
+    <label>Name:</label>  
+    <div>  
+        <input type="text" name="name" id="id_name"  value="{{ student.name }}" >  
+    </div>  
+  </div>  
+    <div>  
+    <label>Email:</label>  
+    <div>  
+        <input type="email" name="email" id="id_email" value="{{ student.email }}">  
+    </div>  
+  </div>  
+    <div>  
+    <label>Age:</label>  
+    <div>  
+        <input type="text" name="age" id="id_age" min = 1 value="{{ student.age }}">  
+    </div>  
+  </div>  
+    <div>  
+    <label></label>  
+    <div>  
+    <button type="submit" class="btn btn-success">Update</button>  
+    </div>  
+  </div>  
+    </div>  
+</form>  
+</body>  
+</html>  

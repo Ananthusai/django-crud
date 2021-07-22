@@ -1,0 +1,50 @@
+<!DOCTYPE html>  
+<head>   
+    <title>Home</title>  
+</head>  
+<body>  
+<form method="POST" action="/stu">  
+        {% csrf_token %}  
+    <div class="container">  
+<br>  
+    <div>  
+    <label></label>  
+    <div>  
+    <h1>Enter Details</h1>  
+    </div>  
+  </div>  
+    <div>  
+    <label>Student Id:</label>  
+    <div>  
+      {{ form.id }}  
+    </div>  
+  </div>  
+  <div>  
+    <label> Name:</label>  
+    <div>  
+      {{ form.name }}  
+    </div>  
+  </div>  
+    <div>  
+    <label>Email:</label>  
+    <div>  
+      {{ form.email }}  
+    </div>  
+  </div>  
+    <div>  
+    <label>Age:</label>  
+    <div>  
+      {{ form.age }}  
+    </div>  
+  </div>  
+  <br>
+    <div>  
+    <label></label>  
+    <div>  
+    <button type="submit" class="btn btn-primary">Submit</button>  
+    </div>  
+  </div>  
+    </div>  
+</form>  
+</body>  
+</html>  
